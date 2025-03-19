@@ -17,3 +17,10 @@ print('first few rows: \n', data.head())
 
 # Display last few rows
 print('last few rows: \n', data.tail())
+
+# remove empty cells - One way to deal with empty cells is to remove rows 
+# that contain empty cells.
+new_df = data.dropna()
+
+print('after removal of empty cells/rows: \n',new_df.to_string())
+
